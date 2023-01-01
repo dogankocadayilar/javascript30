@@ -41,13 +41,41 @@ body {
   transform: translateY(-3px); /* account for the height of the clock hands */
 }
 
+.cover {
+  position: relative;
+  width: 2em;
+  height: 2em;
+  background-color: #eee;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
 .hand {
   width: 50%;
-  height: 6px;
-  background: black;
+  border-radius: 5px;
   position: absolute;
   top: 50%;
   transform-origin: 100%;
   transform: rotate(90deg);
-  transition: all 50ms cubic-bezier(0, 2, 0.25, 1);
+  transition-duration: 100ms;
+  transition-timing-function: cubic-bezier(0, 2, 0.25, 1);
+}
+
+.hour-hand {
+  height: 10px;
+  background-color: #333;
+}
+
+.min-hand {
+  height: 6px;
+  background-color: #eee;
+}
+
+.second-hand {
+  height: 3px;
+  background-color: red;
 }
