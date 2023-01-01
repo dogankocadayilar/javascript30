@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --base: #add8e6;
+  --spacing: 0px;
+  --blur: 0px;
+  --radius: 0%;
+}
+
+body {
+  text-align: center;
+  background: #193549;
+  color: #eee;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 2rem;
+}
+
+.controls {
+  margin-bottom: 1em;
+}
+
+input {
+  width: 10em;
+  accent-color: var(--base);
+}
+
+.hl {
+  color: var(--base);
+}
+
+.image {
+  width: 600px;
+  height: 600px;
+  border: var(--spacing) solid var(--base);
+  filter: blur(var(--blur));
+  border-radius: var(--radius);
+  object-fit: cover;
+}
