@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: auto;
+  background-color: orange;
+}
+
+.search-form {
+  width: 500px;
+  margin: 5em auto;
+}
+
+.search {
+  position: relative;
+  bottom: -0.6em;
+  z-index: 1;
+  width: 100%;
+  padding: 1em;
+  font-size: 2rem;
+  text-align: center;
+  outline: none;
+  border: 10px solid #eee;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  color: #333;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: inherit;
+  text-transform: capitalize;
+}
+
+.search::placeholder {
+  color: #aaa;
+}
+
+.suggestions {
+  list-style: none;
+}
+
+.suggestions li {
+  text-transform: capitalize;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: white;
+  border-bottom: 2px solid #eee;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.suggestions li:nth-child(even) {
+  transform: perspective(100px) rotateX(3deg) translateY(2px) scale(0.998);
+  background: linear-gradient(to bottom, #ffffff 0%, #efefef 100%);
+}
+
+.suggestions li:nth-child(odd) {
+  transform: perspective(100px) rotateX(-3deg) translateY(3px);
+  background: linear-gradient(to top, #ffffff 0%, #efefef 100%);
+}
+
+.population {
+  font-weight: bold;
+}
+
+.hl {
+  background-color: orange;
+  padding: 0 0.1em;
+  border-radius: 5px;
+  font-weight: bold;
+}
