@@ -1,7 +1,7 @@
 # Javascript30 - 30 Day Javascript Challenge
 
 Hi!
-This repository is created to keep track of my progress in the JavaScript 30 Day Challenge and contains all my asnwers.
+This repository is created to keep track of my progress in the JavaScript 30 Day Challenge and contains all my answers.
 
 > Course created by [Wes Bos](https://github.com/wesbos) Join the challenge here - [JavaScript30](https://javascript30.com/account)
 
