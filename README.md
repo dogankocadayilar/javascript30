@@ -11,12 +11,12 @@ A free 30 day vanilla js coding challenge. Learn to build 30 things in 30 days w
 
 ## Table Of Contents
 
-| Source                                                                                                     | Demo                                                                              |
-| ---------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| [Javascript Drum Kit](https://github.com/dogankocadayilar/javascript30/tree/main/01 - Javascript Drum Kit) | [Demo](https://dogankocadayilar.github.io/javascript30/01 - Javascript Drum Kit/) |
-| [JS + CSS Clock](https://github.com/dogankocadayilar/javascript30/tree/main/02 - JS and CSS Clock)         | [Demo](https://dogankocadayilar.github.io/javascript30/02 - JS and CSS Clock/)    |
-| [CSS Variables](https://github.com/dogankocadayilar/javascript30/tree/main/03 - CSS Variables)             | [Demo](https://dogankocadayilar.github.io/javascript30/03 - CSS Variables/)       |
-| [Array Cardio Day 1](https://github.com/dogankocadayilar/javascript30/tree/main/04 - Array Cardio Day 1)   | [Demo](https://dogankocadayilar.github.io/javascript30/04 - Array Cardio Day 1/)  |
-| [Flex Panel Gallery](https://github.com/dogankocadayilar/javascript30/tree/main/05 - Flex Panel Gallery)   | [Demo](https://dogankocadayilar.github.io/javascript30/05 - Flex Panel Gallery/)  |
-| [Type Ahead](https://github.com/dogankocadayilar/javascript30/tree/main/06 - Type Ahead)                   | [Demo](https://dogankocadayilar.github.io/javascript30/06 - Type Ahead/)          |
-| [Array Cardio Day 2](https://github.com/dogankocadayilar/javascript30/tree/main/07 - Array Cardio Day 2)   | [Demo](https://dogankocadayilar.github.io/javascript30/07 - Array Cardio Day 2/)  |
+| Source                                                                                                             | Demo                                                                                       |
+| ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| [Javascript Drum Kit](https://github.com/dogankocadayilar/javascript30/tree/main/01%20-%20Javascript%20Drum%20Kit) | [Demo](https://dogankocadayilar.github.io/javascript30/01%20-%20Javascript%20Drum%20Kit/)  |
+| [JS + CSS Clock](https://github.com/dogankocadayilar/javascript30/tree/main/02%20-%20JS%20and%20CSS%20Clock)       | [Demo](https://dogankocadayilar.github.io/javascript30/02%20-%20JS%20and%20CSS%20Clock/)   |
+| [CSS Variables](https://github.com/dogankocadayilar/javascript30/tree/main/03%20-%20CSS%20Variables)               | [Demo](https://dogankocadayilar.github.io/javascript30/03%20-%20CSS%20Variables/)          |
+| [Array Cardio Day 1](https://github.com/dogankocadayilar/javascript30/tree/main/04%20-%20Array%20Cardio%20Day%201) | [Demo](https://dogankocadayilar.github.io/javascript30/04%20-%20Array%20Cardio%20Day%201/) |
+| [Flex Panel Gallery](https://github.com/dogankocadayilar/javascript30/tree/main/05%20-%20Flex%20Panel%20Gallery)   | [Demo](https://dogankocadayilar.github.io/javascript30/05%20-%20Flex%20Panel%20Gallery/)   |
+| [Type Ahead](https://github.com/dogankocadayilar/javascript30/tree/main/06%20-%20Type%20Ahead)                     | [Demo](https://dogankocadayilar.github.io/javascript30/06%20-%20Type%20Ahead/)             |
+| [Array Cardio Day 2](https://github.com/dogankocadayilar/javascript30/tree/main/07%20-%20Array%20Cardio%20Day%202) | [Demo](https://dogankocadayilar.github.io/javascript30/07%20-%20Array%20Cardio%20Day%202/) |
