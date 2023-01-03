@@ -1,0 +1,82 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./background.jpg");
+  background-position: center;
+}
+
+.player {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.1);
+  max-width: 800px;
+  position: relative;
+  overflow: hidden;
+}
+
+.player:hover > .video-controls {
+  transform: translateY(0);
+}
+
+.video-controls {
+  transform: translateY(100%) translateY(-2em);
+  padding: 0.5em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition: all 400ms;
+}
+
+button {
+  padding: 0.5em 0;
+  width: 3em;
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  color: #eee;
+  cursor: pointer;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top {
+  margin-bottom: 0.2em;
+}
+
+.volume-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 0 0.5em;
+}
+
+.top input {
+  width: 100%;
+  padding: 0.5em 0;
+}
+
+.slider {
+  height: 0.5em;
+  outline: none;
+  accent-color: orange;
+}
+
+.slider::-webkit-slider-thumb {
+  background: orange;
+  cursor: e-resize;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+    <title>Custom Video Player</title>
+  </head>
+  <body>
+    <main class="player" id="player">
+      <video width="800" class="video" id="video" preload="metadata">
+        <source src="./video.mp4" type="video/mp4" />
+      </video>
+
+      <div class="video-controls hidden" data-controls>
+        <div class="top">
+          <input
+            type="range"
+            id="seekBar"
+            class="slider"
+            min="0"
+            max="100"
+            value="0"
+          />
+        </div>
+        <div class="bottom">
+          <button id="playPauseButton"><i class="fa-solid fa-play"></i></button>
+          <div class="volume-part">
+            <button id="muteButton">
+              <i class="fa-solid fa-volume-high"></i>
+            </button>
+            <input
+              type="range"
+              id="volumeBar"
+              class="slider"
+              min="0"
+              max="100"
+              value="100"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
