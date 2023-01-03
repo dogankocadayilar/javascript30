@@ -4,7 +4,9 @@ const playPauseButton = document.getElementById("playPauseButton");
 const seekBar = document.getElementById("seekBar");
 const muteButton = document.getElementById("muteButton");
 const volumeBar = document.getElementById("volumeBar");
+const skipButtons = document.querySelectorAll("[data-skip]");
 
+video.addEventListener("click", togglePlay);
 playPauseButton.addEventListener("click", togglePlay);
 muteButton.addEventListener("click", toggleMute);
 volumeBar.addEventListener("input", () => {
@@ -17,13 +19,14 @@ volumeBar.addEventListener("input", () => {
     muteButton.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
   }
 });
-seekBar.addEventListener("input", function () {
+seekBar.addEventListener("input", () => {
   video.currentTime = video.duration * (seekBar.value / 100);
 });
 
-video.addEventListener("timeupdate", function (e) {
+video.addEventListener("timeupdate", () => {
   seekBar.value = (video.currentTime / video.duration) * 100;
 });
+skipButtons.forEach((button) => button.addEventListener("click", skip));
 
 function togglePlay() {
   if (video.paused) {
@@ -43,4 +46,8 @@ function toggleMute() {
     video.muted = true;
     muteButton.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
   }
+}
+
+function skip() {
+  video.currentTime += parseFloat(this.dataset.skip);
 }
