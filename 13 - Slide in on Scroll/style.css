@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: orange;
+}
+
+.site-wrap {
+  max-width: 700px;
+  margin: auto;
+  padding: 1em;
+  text-align: justify;
+  background-color: white;
+  color: #333;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  height: 100%;
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.align-left {
+  float: left;
+  margin-right: 1em;
+}
+
+.align-right {
+  float: right;
+  margin-left: 1em;
+}
+
+.slide-in {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.align-left.slide-in {
+  transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide-in {
+  transform: translateX(30%) scale(0.95);
+}
+
+.slide-in.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
