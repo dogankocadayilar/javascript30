@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  background-image: url("./background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  fill: white;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 50%;
+  width: 200px;
+  margin-bottom: 2em;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 400px;
+  padding: 1em;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 1em;
+}
+
+.list {
+  list-style: none;
+  padding: 0 1em;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  border-bottom: 1px solid #333;
+  padding: 0.5em 0;
+  font-weight: bold;
+}
+
+.list li input {
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.input {
+  font-size: 1.2rem;
+  outline: none;
+  width: 100%;
+  padding: 0.5em;
+  font-family: inherit;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5em;
+  width: 100%;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: 1px solid #333;
+  font-size: 1rem;
+  padding: 0.5em 0;
+  width: 50%;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+}
