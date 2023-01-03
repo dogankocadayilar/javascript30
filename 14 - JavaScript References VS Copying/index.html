@@ -58,7 +58,7 @@
 
       // with Objects
       const person = {
-        name: "Wes Bos",
+        name: "Dogan",
         age: 80,
       };
 
@@ -75,21 +75,19 @@
 
       // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
 
-      const wes = {
-        name: "Wes",
-        age: 100,
+      const dogan = {
+        name: "dogan",
+        age: 22,
         social: {
-          twitter: "@wesbos",
-          facebook: "wesbos.developer",
+          twitter: "@etceterad",
         },
       };
 
-      console.clear();
-      console.log(wes);
+      console.log(dogan);
 
-      const dev = Object.assign({}, wes);
+      const dev = Object.assign({}, dogan);
 
-      const dev2 = JSON.parse(JSON.stringify(wes));
+      const dev2 = JSON.parse(JSON.stringify(dogan));
     </script>
   </body>
 </html>
