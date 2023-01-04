@@ -6,4 +6,29 @@
 
 body {
   margin: 0;
+  font-family: sans-serif;
+  background: url("https://source.unsplash.com/nDqA4d5NL0k/2000x2000");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.bands {
+  background-color: white;
+  list-style: inside square;
+  font-size: 1.2rem;
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.05);
+  width: 500px;
+  padding: 0;
+}
+
+.bands li {
+  border-bottom: 1px solid #ccc;
+  padding: 1em;
+}
+
+.bands li:last-child {
+  border: none;
 }
