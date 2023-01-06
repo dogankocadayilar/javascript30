@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #333;
+  color: #eee;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.main {
+  width: 700px;
+  margin: 1em auto;
+}
+
+.navbar {
+  padding: 1em 0;
+}
+
+.links {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: #eee;
+  font-size: 1.5rem;
+}
+
+p {
+  text-align: justify;
+  font-size: 1.1rem;
+}
+
+.highlight {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  /* display: block; */
+  background-color: orange;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 200ms ease;
+}
