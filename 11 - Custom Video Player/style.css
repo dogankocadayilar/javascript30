@@ -48,6 +48,36 @@ button {
   cursor: pointer;
 }
 
+button.dropup {
+  position: relative;
+  z-index: 1;
+}
+
+.open {
+  display: block !important;
+}
+
+button.dropup .menu {
+  display: none;
+  z-index: 999;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  transform: translate(-10%, -100%);
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: -100%;
+}
+
+.menu li {
+  padding: 0.5em;
+}
+
+.menu li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 .bottom {
   display: flex;
   justify-content: space-between;

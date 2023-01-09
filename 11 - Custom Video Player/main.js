@@ -5,6 +5,20 @@ const seekBar = document.getElementById("seekBar");
 const muteButton = document.getElementById("muteButton");
 const volumeBar = document.getElementById("volumeBar");
 const skipButtons = document.querySelectorAll("[data-skip]");
+const speedDropUpButton = document.querySelector(".dropup");
+const speedButtons = document.querySelectorAll(".dropup [data-speed]");
+const speedDropUpMenu = document.querySelector(".menu");
+
+speedButtons.forEach((button) =>
+  button.addEventListener("click", (e) => {
+    const speed = parseFloat(e.target.dataset.speed);
+    video.playbackRate = speed;
+  })
+);
+
+speedDropUpButton.addEventListener("click", () => {
+  speedDropUpMenu.classList.toggle("open");
+});
 
 video.addEventListener("click", togglePlay);
 playPauseButton.addEventListener("click", togglePlay);
