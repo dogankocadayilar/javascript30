@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #348c31;
+  color: #eee;
+  font-family: "Amatic SC", cursive;
+}
+
+.game {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  padding: 1em;
+  font-size: 3rem;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.score {
+  padding: 0.5em;
+  border-radius: 5px;
+  margin-left: 0.5em;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.holes {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 150px);
+  gap: 1em;
+}
+
+.hole {
+  /* border: 1px solid red; */
+  position: relative;
+  overflow: hidden;
+}
+
+.hole::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  background: url("./dirt.svg") center no-repeat;
+  background-size: contain;
+  width: 80%;
+  height: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mole {
+  position: absolute;
+  background: url("./mole.svg") center no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 90%;
+  top: 100%;
+  transition: all 300ms;
+}
+
+.mole.peep {
+  top: 20%;
+}
+
+button {
+  margin: 5em 0;
+  width: max-content;
+  padding: 0.5em 1em;
+  font-size: 1.2rem;
+  font-family: inherit;
+  border-radius: 5px;
+  border: 1px solid #348c31;
+  background-color: #eee;
+  color: #348c31;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 100ms;
+}
+
+button:hover {
+  border-color: #eee;
+  background-color: #348c31;
+  color: #eee;
+}
